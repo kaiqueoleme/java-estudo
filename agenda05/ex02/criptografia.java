@@ -6,6 +6,7 @@ public class criptografia {
     public static void main(String[] args) {
 
         try {
+            //Comando para entrada da String
             String variavelString = JOptionPane.showInputDialog(null, "Entre com uma String: ");
             int valorAsciiOriginal;
 
@@ -25,7 +26,6 @@ public class criptografia {
                 mensagem += valorAsciiOriginal + " ";
             }
             JOptionPane.showMessageDialog(null, mensagem);
-
             
             //Criptografia adicionando +10
             StringBuilder mensagemCriptografada = new StringBuilder();
@@ -45,7 +45,6 @@ public class criptografia {
 
             //Exibir a mensagem criptografada
             JOptionPane.showMessageDialog(null, "A mensagem criptografada ficou assim: " + mensagemCriptografada.toString());
-
 
         } catch (Exception e) {
 
